@@ -1,0 +1,133 @@
+
+    <h4 class="text-black">fill forms to know your eligible credit card offer</h4>
+
+ <form>
+    <div class="card">
+        <div class="card-body"> 
+     <h1 class=" card-title text-info"> Tell us about yourself</h1>
+ <div class="container">
+    <div class="row">
+
+      <div class="col-4">
+        <div class="form-group">
+            <i class="fa fa-user icon"></i>&nbsp;
+            <label>First name</label>
+               <input type="text" class="form-control" id="">
+         </div></div>
+
+         <div class="col-4">
+          <div class="form-group">
+        <i class="fa fa-user icon"></i>&nbsp;
+        <label>Last name</label>
+           <input type="text" class="form-control" id="">
+          </div></div>
+
+      <div class="col-4">
+            <div class="form-group">
+          <i class="fa fa-user icon"></i>&nbsp;
+          <label>date of birth</label>
+          <input type="date" id="calendar" class="form-control" name="Date of birth">
+      </div></div>
+    </div>
+     <br>
+     <br>
+     <br>
+    <div class="row">
+
+      <div class="col-4">
+         <div class="form-group">
+            <i class="fa fa-user icon"></i>&nbsp;
+            <label>mobile number</label>
+               <input type="text" class="form-control" id="">
+      </div></div>
+
+      <div class="col-4">
+        <div class="form-group">
+        <i class="fa fa-user icon"></i>&nbsp;
+        <label>where u currently living</label>
+           <input type="text" class="form-control" id="">
+      </div></div>
+
+      <div class="col-4">
+        <div class="form-group">
+           <i class="fa fa-user icon"></i>&nbsp;
+        <label>email id</label>
+           <input type="text" class="form-control" id="">
+     </div></div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <div class="row">
+        <div class="col-4">
+             <div class="form-group" >
+            <i class="fa fa-user icon"></i>&nbsp;
+    
+          <label >Type of employement:</label>
+        
+          
+         <select class="form-control" formControlName="typeofemployement" type="text" style="width: 100%;" onselect=func(value)>
+
+
+          <option value="select" >--select--</option> 
+        <option value="salaried">salaried</option>
+         <option value="salaried Doctor"> salaried Doctor</option>
+         <option value="self employed bussiness"> self employed bussiness</option>
+         <option value="self employed professional"> self employed professional</option>
+        </select>
+        </div></div>
+        <ng-container *ngIf="optionValue == 'salaried'">
+          <div class="col=1">
+                             <label>companyName</label>
+                             <input type="text" formControlName="companyname" class="form-control" id="companyname" >
+         
+               </div></ng-container>
+        
+        <div class="col">
+            <div class="form-group">
+           <i class="fa fa-user icon"></i>&nbsp;
+           <label >Your Relationship with ICICI bank:</label>
+       <select>
+         <option value="select">--select--</option> 
+       <option value="No existing relationship">No existing relationship</option>
+        <option value=" Homeloan"> Homeloan</option>
+        <option value=" carloan"> carloan</option>
+        <option value=" personalloan"> personalloan</option>
+        <option value=" creditloan"> creditloan</option>
+        <option value=" savingloan"> savingloan</option>
+        <option value=" salaryaccount"> salaryaccount</option>
+        <option value=" currentaccount"> currentaccount</option>
+       </select>
+       </div></div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <div class="row">
+        <div class="col-12">
+             <div class="form-group">
+            <i class="fa fa-user icon"></i>&nbsp;
+            <label class="checkbox-inline">Do you have a credit card
+                <input type="checkbox" value="">yes 
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" value="">no
+              </label>
+        </div></div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <input type="checkbox" id="myCheck"> I declare that the information i have provided above is accurate and complete to the best of my knowledge i authorize IcIcI bank : 
+    <br>
+    <br>
+    <br>
+    <br>
+    <button type="button" class="btn btn-primary">get offers</button>      
+  </div> 
+</div>
+</div> 

@@ -1,0 +1,62 @@
+.container{
+  position: relative;
+  background-color: #fafafe;
+  border-radius: 10px;
+  margin: 40px;
+  padding: 25px 20px 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  width: 250px;
+  box-sizing: border-box;
+}
+.card{
+  position: relative;
+  z-index: 2;
+}
+.card_title{
+  font-size: 24px;
+  margin: 0
+
+
+}
+  
+.input{
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+  padding-top: 10px;
+
+}
+.input_label {
+  color: #0000ff;
+  position: absolute;
+  top: 20px;
+
+}
+
+.input_field{
+  border: 0;
+  padding: 0;
+  z-index: 1;
+  background-color: transparent;
+  border-bottom: 2px solid #eee;
+  font: inherit;
+  font-size: 14px;
+  line-height: 30px;
+}
+.input_eye
+{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 36px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
